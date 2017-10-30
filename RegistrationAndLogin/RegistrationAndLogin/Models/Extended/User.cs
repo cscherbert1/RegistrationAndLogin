@@ -24,7 +24,7 @@ namespace RegistrationAndLogin.Models
 
         [Display(Name = "Last Name")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Last name is required")]
-        public string FLastName { get; set; }
+        public string LastName { get; set; }
 
         [Display(Name = "Email Id")]
         [Required(AllowEmptyStrings = false, ErrorMessage ="Email Id is required")]
@@ -32,7 +32,7 @@ namespace RegistrationAndLogin.Models
         public string EmailId { get; set; }
 
         [Display(Name ="Date of Birth")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString ="{0: MM-dd-yyyy}")]
         public DateTime DateOfBirth { get; set; }
 
